@@ -1,8 +1,12 @@
 const repeatString = function (myString, nRepetitions) {
   if (nRepetitions >= 0) {
-    return myString.repeat(nRepetitions);
+    let sumString = "";
+    for (let repetition = 0; repetition < nRepetitions; ++repetition) {
+      sumString += myString;
+    }
+    return sumString;
   }
-  return "ERROR";
+  return "ERROR" ;
 };
 
 // Do not edit below this line
